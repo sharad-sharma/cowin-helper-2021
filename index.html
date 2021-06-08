@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="dV5qIJIHK5SYtZLdDL9nIEqnKyhWuQaI2Wm2TXmF3Gs" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./ch.png" />
+    <title>Cowin helper</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+
+        <h1>cowin-helper</h1>
+      </a>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Info
+      </button>
+    </div>
+  </nav>
+  <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">How to use</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container d-grid gap-1">
+              <p>It continuously monitors the availability of slots on your selected Pincode and lets you know when slots are available.</p>
+              <p>Leave the tab open so that it will run continuously in the background.</p>
+              <p>It is currently monitoring only dose 1.</p>
+              <p>Note: dd-mm-yyyy should be filled like (example, 02-06-2021)</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card-header text-center"><h5>Enter your details</h5></div>
+        <div class="container">
+        <div class="card-body">
+          <div class="container d-grid gap-2">
+          <input type="text" class="form-control" id="pin" placeholder="Pincode" name="name">
+          <input type="text" class="form-control" id="name" placeholder="Name" name="Name">
+             <input type="text" class="form-control" id="date" placeholder="dd-mm-yyyy" name="date">
+          <select class="form-select" id="age" aria-label="Default select example">
+          <option selected>Age range</option>
+          <option value="18">18+</option>
+          <option value="45">45+</option>
+        </select>
+          <div class="d-grid gap-2">
+            <button class="btn btn-warning" type="button" onclick="getUser()">Submit</button>
+            <h5 class="mt-2 danger" id="msg"></h5>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  
+  </body>
+</html>

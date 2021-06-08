@@ -1,0 +1,27 @@
+.navbar-brand {
+  margin-left: 50px;
+}
+.card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+        width: 400px;
+        margin-top: 100px;
+}
+.handle {
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 250px;
+  }
+  .midMe {
+    margin-left: 150px;
+  }
+}
+
+body {
+ /*background-image: url("paper.gif");*/
+ background-color: #f5f5f5;
+}
